@@ -1,0 +1,254 @@
+[
+  {
+    "user_id": 5,
+    "user_profile": {
+      "patience": false,
+      "exigence": true,
+      "take_advise": true
+    },
+    "dream_id": 457152,
+    "user_C0": [
+      [
+        "Neckline",
+        "Stand Collar"
+      ],
+      [
+        "Type",
+        "A Line"
+      ],
+      [
+        "Sleeve Length",
+        "Long Sleeve"
+      ],
+      [
+        "Waist Line",
+        "High Waist"
+      ],
+      [
+        "Length",
+        "Maxi"
+      ]
+    ]
+  },
+  {
+    "sys_id": 19,
+    "sys_profile": {
+      "sale": false,
+      "smart": 1.0
+    }
+  },
+  [
+    {
+      "turn_id": 0,
+      "system_action": [
+        [
+          "greeting",
+          "",
+          ""
+        ]
+      ],
+      "system_utterance": [
+        "Hello, may I help you?"
+      ]
+    },
+    {
+      "turn_id": 1,
+      "user_action": [
+        [
+          "inform",
+          "Waist Line",
+          "High Waist"
+        ],
+        [
+          "inform",
+          "Length",
+          "Maxi"
+        ]
+      ],
+      "user_utterance": [
+        "I want to find a dress with High Waist Waist Line, ;",
+        "I would like to find a Maxi dress."
+      ],
+      "user_utterance_para": [
+        "I want to buy a Maxi dress, with High Waist Waist Line."
+      ],
+      "system_action": [
+        [
+          "request",
+          "image",
+          [
+            3009094,
+            2442802,
+            2667672,
+            2390654,
+            2246659
+          ]
+        ]
+      ],
+      "system_utterance": [
+        "I've found something interesting for you. Here are some of them [3009094, 2442802, 2667672, 2390654, 2246659]."
+      ]
+    },
+    {
+      "turn_id": 2,
+      "user_action": [
+        [
+          "inform",
+          "Type",
+          "A Line"
+        ],
+        [
+          "inform",
+          "Sleeve Length",
+          "Long Sleeve"
+        ]
+      ],
+      "user_utterance": [
+        "I want to buy a A Line dress.",
+        "I'm looking for a dress with Long Sleeve, "
+      ],
+      "user_utterance_para": [
+        "I want to buy a A Line dress, with Long Sleeve."
+      ],
+      "system_action": [
+        [
+          "request",
+          "image",
+          [
+            2198118,
+            1509082,
+            2059476,
+            1651627,
+            1964948
+          ]
+        ]
+      ],
+      "system_utterance": [
+        "Ok, here's some propositions. [2198118, 1509082, 2059476, 1651627, 1964948] Do you wanna choose one of these dresses? "
+      ]
+    },
+    {
+      "turn_id": 3,
+      "user_action": [
+        [
+          "inform",
+          "Neckline",
+          "Stand Collar"
+        ]
+      ],
+      "user_utterance": [
+        "I would like to find a dress with Stand Collar Neckline."
+      ],
+      "user_utterance_para": [
+        "I'm looking for a dress with Stand Collar Neckline."
+      ],
+      "system_action": [
+        [
+          "request",
+          "image",
+          [
+            1374490,
+            1509082,
+            457152,
+            831423,
+            2349006
+          ]
+        ]
+      ],
+      "system_utterance": [
+        "I've found something interesting for you. Here are some of them [1374490, 1509082, 457152, 831423, 2349006]."
+      ]
+    },
+    {
+      "turn_id": 4,
+      "user_action": [
+        [
+          "request",
+          "Composition",
+          1374490
+        ],
+        [
+          "request",
+          "Fit Type",
+          1374490
+        ]
+      ],
+      "user_utterance": [
+        "What is the Composition of its materials?",
+        "Is the dress regular fit?"
+      ],
+      "user_utterance_para": [
+        "Do you have any detail information of fabric Composition?",
+        "How is the dress's Fit Type?"
+      ],
+      "system_action": [
+        [
+          1374490,
+          "Composition",
+          "100% Polyester"
+        ],
+        [
+          1374490,
+          "Fit Type",
+          "Regular Fit"
+        ]
+      ],
+      "system_utterance": [
+        "The material's Composition is 100% Polyester.",
+        "It's Regular Fit."
+      ]
+    },
+    {
+      "turn_id": 5,
+      "user_action": [
+        [
+          "request",
+          "price",
+          1374490
+        ]
+      ],
+      "user_utterance": [
+        "How much is it?"
+      ],
+      "user_utterance_para": [
+        "What's the price?"
+      ],
+      "system_action": [
+        [
+          1374490,
+          "price",
+          "US$21.56"
+        ]
+      ],
+      "system_utterance": [
+        "It's US$21.56."
+      ]
+    },
+    {
+      "turn_id": 6,
+      "user_action": [
+        [
+          "buy",
+          1,
+          "bye"
+        ]
+      ],
+      "user_utterance": [
+        "Ok I'll buy it, bye-bye."
+      ],
+      "user_utterance_para": [
+        "Ok I'll buy it, bye-bye."
+      ],
+      "system_action": [
+        [
+          "bye",
+          "",
+          ""
+        ]
+      ],
+      "system_utterance": [
+        "Thank you for all, looking forward to seeing you again."
+      ]
+    }
+  ]
+]
