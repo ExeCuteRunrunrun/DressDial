@@ -1,0 +1,26 @@
+﻿"attr","type","example","entropy","valid","rules","User template","Sys template","value_dependent"
+Belt,visual,"Yes,No,None",0.7511,visual,no / none = without,"@category@ with @attr@, ; without @attr@, ",,yes
+Color,visual,"Watermelon Pink,Black and White",4.8685,visual,,"@category@ in @value@,; @category@ of @value@ @attr@,",,no
+Hem Shaped,visual,"None,Flared, Straight",2.9047,visual,"str.replace(""Hem Shaped"",""Hem"")","@value@ @category@, ; @category@ with @value@ @attr@, ",,no
+Length,visual,"Midi, Short",2.2969,visual,"value.replace("","" , ""or"")","@value@ @category@,",,no
+Neckline,visual,"None,Cold Shoulder, Straps",3.8203,visual,"value.replace("","" , ""or""); str.replace(""neck neckline"", ""neck"")","@category@ with @value@ @attr@, ",,no
+Pattern Type,visual,"None,Colorblock, Snakeskin Print",2.9006,visual,"str.replace(""Pattern Type"",""Pattern"")","@category@ with @value@ @attr@, ",,no
+Pockets,visual,"Yes,No,None",0.0057,nope,,,,
+Sleeve Length,visual,"None,Cap Sleeve, Sleeveless",2.0737,visual,,"@category@ which is @sleeveless@, ; @category@ with @value@, ; @category@ which has @cap sleeve@ or is @sleeveless@, ; @sleeveless@ @category@, ",,yes
+Sleeve Type,visual,"None,Flounce Sleeve, Puff Sleeve",2.5924,visual,"value.replace("","" , ""or"")","@category@ with @value@, ",,no
+Style,visual,"None,Modest, Boho",2.5212,visual,,"@category@ which gives a @value@ @attr@, ",,no
+Type,visual,"None,A Line, Shirt",2.5755,visual,,"@value@ @category@, ",,no
+Waist Line,visual,"None,High Waist, Natural",1.1063,visual,"str.replace(""waist waist line"",""waist line"")","@category@ with @value@ @attr@, ; @category@ of @value@ @attr@, ",,no
+Chest Pad,non-visual,"Yes,None,No Padding",0.3097,non-visual,,Does the @category@ have @attr@? Has the @category@ any @attr@? Is there any @attr@ in the @category@?,"No, it doesn't have any. / I'm sorry I don't see any specific information of it.",yes
+Care Instructions,non-visual,"None,Hand wash,do not dry clean,Machine wash, do not dry clean",0.1914,non-visual,,How should I wash it? Can I machine wash it? Can the @category@ go in wash machines? ,You should do @value@.,no
+Composition,non-visual,"55% Viscose, 45% Elastane",3.6675,non-visual,"value.replace("","",""and"")",Do you have any detail information of fabric @attr@? What is the @attr@ of its materials?,The fabric's composition is @value@. The material's @attr@ is @value@. It's made of @value@.,no
+Fabric,non-visual,Non-Stretch,1.4210,non-visual,,Is it stretchy? Is the @attr@ stretchy?,It's in @value@ @attr@. It's @value@y.,no
+Fit Type,non-visual,"Regular Fit, Slim Fit,None",0.9597,non-visual,,How is the @category@'s @attr@? Is the @category@ regular fit?,It's @value@.,no
+Lining,non-visual,"90% Nylon, 10% Elastane,None",0.0792,nope,,,,
+Material,non-visual,"None,Lycra, Polyester",2.1434,non-visual,,What is the @category@ made of? What's the @attr@ of the @category@?,It's made of @value@.,no
+Size Fit,non-visual,"None,This style is oversized. For a more fitted look, size down.",0.0172,nope,,,,
+price,non-visual,,,,,How much is it? How much does it cost? What's the @attr@? What @attr@?,It's @value@. The best offer is @value@.,no
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
