@@ -21,4 +21,8 @@ To generate the dataset with our proposed framework, run
 
 > $python generate_dataset.py
 
+For each file generated, its name follows the format of {*dream_dress_id*}\_{*user_id*}\_{*system_id*}\_{*ind*}.json.
 
+For stupid systems (*system_id* from 0-6 and 10-16), we generate 1 dialogue each time (*ind*=0).
+
+For clever systems (*system_id* from 7-9 and 17-19), we generate 3 dialogues each time (*ind* from 0-2).
