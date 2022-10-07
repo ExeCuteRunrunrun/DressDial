@@ -11,6 +11,7 @@ We employed a self-play template-guided framework to generate the dialogue autom
 +---- dress_info.csv (information of all dresses)
 +---- dream_dress_info.csv (information of dream dresses)
 +---- dream_dresses.json (list of ID of dream dresses)
++---- dress_attr_value.json (all attributes and their values)
 +---- sys_persona.json (personality of 20 systems)
 +---- user_persona.json (personality of 8 users)
 +---- dress_attrs_templates.csv (template of generation for each attribute/slot)
@@ -19,22 +20,29 @@ We employed a self-play template-guided framework to generate the dialogue autom
 
 ## Clone this repo
 
-> $git clone git@github.com:ExeCuteRunrunrun/DressDial.git
-> cd DressDial
+```bash
+$git clone git@github.com:ExeCuteRunrunrun/DressDial.git
+$cd DressDial
+```
 
 ## Create 2 folders for stock the generated files
+
+```bash
+$mkdir dialog_v0_para_o
+$mkdir dialog_v0_para_x
+```
+Then you get :
 
 ```
 +---- dialog_v0_para_o/ (dir to save generated dialogues without turn state annotations)
 +---- dialog_v0_para_x/ (dir to save generated dialogues with turn state annotations)
 ```
 
-> $mkdir dialog_v0_para_o
-> $mkdir dialog_v0_para_x
-
 ## To generate the dataset with our proposed framework, run
 
-> $python generate_dataset.py
+```bash
+$python generate_dataset.py
+```
 
 For each file generated, its name follows the format of {*dream_dress_id*}\_{*user_id*}\_{*system_id*}\_{*ind*}.json.
 
